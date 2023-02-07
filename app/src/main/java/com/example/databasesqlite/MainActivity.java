@@ -48,14 +48,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Calendar calendar = Calendar.getInstance();
                 int year = calendar.get(Calendar.YEAR);
-                int month = calendar.get(Calendar.MONTH);
+                int month = Integer.parseInt(String.valueOf(calendar.get(Calendar.MONTH)));
                 int dayofmoth = calendar.get(Calendar.DAY_OF_MONTH);
+
 
                 DatePickerDialog pickerDialog = new DatePickerDialog(MainActivity.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
 
-                        date.setText(dayOfMonth + "/" + month + "/" + year);
+                        date.setText(dayOfMonth + "/" + month+ "/" + year);
 
 
                     }
