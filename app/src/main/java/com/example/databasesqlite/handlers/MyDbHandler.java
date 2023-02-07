@@ -102,7 +102,9 @@ public class MyDbHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
 
+
         db.delete(TABLE_NAME, "date=?", new String[]{dates});
+
         db.close();
     }
 }

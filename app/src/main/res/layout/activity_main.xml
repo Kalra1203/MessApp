@@ -39,7 +39,7 @@
         android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Breakfast"
-        android:inputType="textPersonName"
+        android:inputType="textPer"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/date" />
 

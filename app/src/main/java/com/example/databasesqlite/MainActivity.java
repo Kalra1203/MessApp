@@ -38,10 +38,8 @@ public class MainActivity extends AppCompatActivity {
         listdata = findViewById(R.id.listdata);
         PickDate = findViewById(R.id.PickDate);
 
-        toolbar= findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
 
 
         PickDate.setOnClickListener(new View.OnClickListener() {
